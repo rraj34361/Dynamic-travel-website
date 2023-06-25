@@ -2,6 +2,8 @@ const express = require("express")
 const hbs = require('hbs')
 const app = express()
 const mongoose = require('mongoose')
+require('dotenv').config()
+const {Mongo_URL} = process.env
 const routes =  require('./routes/main')
 const detail = require('./models/detailsModel')
 const slider = require('./models/sliderModel')
