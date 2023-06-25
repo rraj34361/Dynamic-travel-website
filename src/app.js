@@ -27,7 +27,7 @@ app.set("views","views")
 hbs.registerPartials("views/partials")
 
 //db connection
-mongoose.connect('mongodb+srv://rraj34361:bXgwmkpBz9CHdAfr@cluster0.brjrlou.mongodb.net/Website')
+mongoose.connect(Mongo_URL)
 // newurlParser = true)
 .then(()=>{
     console.log("mongodb connected")
